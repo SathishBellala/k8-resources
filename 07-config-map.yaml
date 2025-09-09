@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: configMap
+metadata:
+  name: nginx-confiG
+data:
+  course: devops
+  duration: "120 hrs"
+  trainer: lohith
