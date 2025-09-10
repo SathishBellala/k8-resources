@@ -16,7 +16,7 @@ spec:
 apiVersion: apps/v1
 kind: Service
 metadata:
-  name: nginx-LoadBalancer
+  name: nginx-service
 spec:
   type: LoadBalancer
   selector:
