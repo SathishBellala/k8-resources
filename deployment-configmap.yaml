@@ -21,7 +21,7 @@ spec:
         volumeMounts:
         - name: ezy-index
           mountpath: /usr/share/nginx/html
-          volumes:
-          - name: ezy-index
-            configMap:
-              name: ezy-index
+    volumes:
+    - name: ezy-index
+      configMap:
+        name: ezy-index
