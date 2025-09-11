@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment1
+  name: nginx-deployment
   namespace: default
 spec:
   replicas: 2
@@ -12,7 +12,7 @@ spec:
     metadata:
       labels:
         app: nginx
-    spec:
+    spec:   # <<-- spec of the Pod template
       containers:
       - name: nginx
         image: nginx:latest
@@ -21,7 +21,7 @@ spec:
         volumeMounts:
         - name: ezy-index
           mountPath: /usr/share/nginx/html
-    volumes:
-    - name: ezy-index
-      configMap:
-        name: ezy-index
+      volumes:    # <<-- must be here, under spec, not template
+      - name: ezy-index
+        configMap:
+          name: ezy-index
