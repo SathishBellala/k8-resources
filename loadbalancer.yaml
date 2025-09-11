@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: nginx
   labels:
-    namespace: expense
+    namespace: default
 spec:
   containers:
     - name: nginx
