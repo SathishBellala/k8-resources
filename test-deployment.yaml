@@ -4,7 +4,7 @@ metadata:
   name: test-deployment
   namespace: dev-namespace
 spec:
-  replicas: 11
+  replicas: 8
   selector:
     matchLabels:
       app: test-nginx
