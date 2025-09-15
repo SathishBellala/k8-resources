@@ -9,13 +9,5 @@ spec:
       env:
       - configMapKeyRef:
         name: nginx-config
-      # - name: course
-      #   valueFrom:
-      #     configMapKeyRef:
-      #       name: nginx-config
-      #       key: course
-      # - name: duration
-      #   valueFrom:
-      #     configMapKeyRef:
-      #       name: nginx-config
-      #       key: duration
+      
+    
